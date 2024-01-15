@@ -1,0 +1,77 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #06373A;
+}
+
+@font-face {
+    font-family: "FiraCode-Bold";
+    src: url(../Fira_Code/static/FiraCode-Bold.ttf);
+}
+
+h1 {
+    font-family: "FiraCode-Bold";
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: "FiraCode-Light";
+    src: url(../Fira_Code/static/FiraCode-Light.ttf);
+}
+
+h2 {
+    font-family: "FiraCode-Light";
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: "FiraCode-Medium";
+    src: url(../Fira_Code/static/FiraCode-Medium.ttf);
+}
+
+h3 {
+    font-family: "FiraCode-Medium";
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: "FiraCode-Regular";
+    src: url(../Fira_Code/static/FiraCode-Regular.ttf);
+}
+
+h4 {
+    font-family: "FiraCode-Regular";
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: "FiraCode-SemiBold";
+    src: url(../Fira_Code/static/FiraCode-SemiBold.ttf);
+}
+
+h5 {
+    font-family: "FiraCode-SemiBold";
+    font-size: 32px;
+}
+
+/* Global Variables */
+:root {
+    /* COLORS */
+    --deep-space-black: #000000;
+
+    /* Futuristic Green + Blue Colors */
+    --dark-green: #062315;
+    --cyprus: #06373A;
+    --eden: #1F5F5B;
+    --salem: #159947;
+    --ocean-green: #49B265;
+    --blueish-green: #008080;
+
+}
+
+body {
+    background-color: var(--deep-space-black, #000000);
+}
+
