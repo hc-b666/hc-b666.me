@@ -59,3 +59,9 @@ body {
     background-color: var(--deep-space-black, #000000);
 }
 
+.sections {
+    padding: 0 70px;
+    width: 100%;
+    height: 100vh;
+}
+

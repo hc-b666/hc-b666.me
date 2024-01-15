@@ -1,13 +1,11 @@
-/* Body */
-body {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+/* Header */
+.header {
+    position: relative;
 }
 
-/* Navbar */
-.navbar {
-    padding: 20px 70px;
+/* Header - Navbar */
+.header .navbar {
+    padding: 20px 0;
     width: 100%;
     background-color: var(--deep-space-black, #000000);
     display: flex;
@@ -18,7 +16,7 @@ body {
     z-index: 1000;
 }
 
-/* Navbar - Left */
+/* Header - Navbar - Left */
 .navbar-left a {
     font-size: 36px;
     font-family: var(--ff-fc-bold, "FiraCode-Bold");
@@ -30,7 +28,7 @@ body {
     transition: 0.3s;
 }
 
-/* Navbar - Right */
+/* Header - Navbar - Right */
 .navbar .navbar-right ul {
     display: flex;
     align-items: center;
@@ -49,9 +47,9 @@ body {
     transition: 0.3s ease-out;
 }
 
-/* Banner */
-.banner {
-    padding: 0 70px;
+/* Header - Banner */
+.header .banner {
+    padding: 30px 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -59,7 +57,7 @@ body {
     gap: 50px;
 }
 
-/* Banner - Image */
+/* Header - Banner - Image */
 .banner .banner-image {
     width: 450px;
     height: 450px;
@@ -79,7 +77,10 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-/* Banner - Content */
+/* Header - Banner - Content */
+.banner .banner-content {
+
+}
 .banner-content h2, 
 .banner-content h3 {
     font-family: var(--ff-fc-regular, "FiraCode-regular");
@@ -89,6 +90,44 @@ body {
     opacity: 0;
     animation: typing 4s steps(40, end), blink 0.75s step-end infinite, fade-in-out 10s linear infinite;
 }
+
+/* Header - Section Title & Email */
+.header .section-title span,
+.header .section-email span {
+    font-size: 16px;
+    font-family: var(--ff-fc-regular, "FiraCode-regular");
+}
+
+.section-title {
+    width: 100px;
+    height: 30px;
+    background-color: var(--dark-green, #062315);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.section-email {
+    width: 300px;
+    height: 30px;
+    background-color: var(--dark-green, #062315);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    right: -130px;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+
+
+
+
 
 /* Keyframes */
 @keyframes typing {
