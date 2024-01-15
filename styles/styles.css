@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #06373A;
+    color: var(--eden, #1F5F5B);
+    list-style: none;
+    text-decoration: none;
 }
 
 @font-face {
@@ -11,19 +13,9 @@
     src: url(../Fira_Code/static/FiraCode-Bold.ttf);
 }
 
-h1 {
-    font-family: "FiraCode-Bold";
-    font-size: 32px;
-}
-
 @font-face {
     font-family: "FiraCode-Light";
     src: url(../Fira_Code/static/FiraCode-Light.ttf);
-}
-
-h2 {
-    font-family: "FiraCode-Light";
-    font-size: 32px;
 }
 
 @font-face {
@@ -31,29 +23,14 @@ h2 {
     src: url(../Fira_Code/static/FiraCode-Medium.ttf);
 }
 
-h3 {
-    font-family: "FiraCode-Medium";
-    font-size: 32px;
-}
-
 @font-face {
     font-family: "FiraCode-Regular";
     src: url(../Fira_Code/static/FiraCode-Regular.ttf);
 }
 
-h4 {
-    font-family: "FiraCode-Regular";
-    font-size: 32px;
-}
-
 @font-face {
     font-family: "FiraCode-SemiBold";
     src: url(../Fira_Code/static/FiraCode-SemiBold.ttf);
-}
-
-h5 {
-    font-family: "FiraCode-SemiBold";
-    font-size: 32px;
 }
 
 /* Global Variables */
@@ -69,6 +46,12 @@ h5 {
     --ocean-green: #49B265;
     --blueish-green: #008080;
 
+    /* Font Family Fira Code */
+    --ff-fc-bold: "FiraCode-Bold";
+    --ff-fc-light: "FiraCode-Light";
+    --ff-fc-medium: "FiraCode-Medium";
+    --ff-fc-regular: "FiraCode-Regular";
+    --ff-fc-semi-bold: "FiraCode-SemiBold";
 }
 
 body {
