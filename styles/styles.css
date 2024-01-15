@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--eden, #1F5F5B);
+    font-family: 'Fira Code', monospace;
     list-style: none;
     text-decoration: none;
 }

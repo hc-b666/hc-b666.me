@@ -80,24 +80,14 @@ body {
 }
 
 /* Banner - Content */
-.banner .banner-content {
-    /* background-color: red; */
-} 
-
 .banner-content h2, 
 .banner-content h3 {
-    font-family: var(--ff-fc-regular, "FiraCode-Regular");
+    font-family: var(--ff-fc-regular, "FiraCode-regular");
     border-right: 0.15rem solid var(--deep-space-black, #000000);
     white-space: nowrap;
     overflow: hidden;
-}
-
-.banner-content h2 {
-    width: 24ch;
-}
-
-.banner-content h3 {
-    width: 30ch;
+    opacity: 0;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite, fade-in-out 10s linear infinite;
 }
 
 /* Keyframes */
@@ -110,8 +100,11 @@ body {
     }
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
+@keyframes fade-in-out {
+    0%, 40% { 
+        opacity: 1; 
+    }
+    100% { 
+        opacity: 0;
     }
 }
