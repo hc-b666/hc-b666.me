@@ -4,4 +4,5 @@
 
 * {
   font-family: "Ubuntu", sans-serif;
+  @apply duration-300;
 }
