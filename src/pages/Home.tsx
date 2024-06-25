@@ -1,10 +1,74 @@
+import { TbCode, TbMovie, TbMusicHeart, TbDeviceGamepad2 } from "react-icons/tb";
+import { FaUserGraduate } from "react-icons/fa";
 
+// ToDo
+// import { TbBrandVscode } from "react-icons/tb";
+// Add Icon of VSCode
+// And when users clicks on it, it should open My Extensions Page
+// And in that page, there should be a list of my favorite extensions
 
 const Home = () => {
   return (
-    <div className="container mt-20 w-full h-screen bg-white dark:bg-black">
-      <h1 className="text-2xl text-black dark:text-white">Hi! I am Muhammadbobur</h1>
-    </div>
+    <main className="container my-20 w-full text-black dark:text-white bg-white dark:bg-black">
+
+      {/* Heading */}
+      <div className="mb-10 flex flex-col">
+        <h1 className="text-2xl">Hello! I am Muhammadbobur</h1>
+        <span className="text-grey text-sm flex items-center gap-1"><TbCode />Aspiring Full-Stack Developer&nbsp; | &nbsp;<FaUserGraduate />WIUT Student&nbsp; | &nbsp;<TbDeviceGamepad2 />Gamer</span>
+      </div>
+
+      {/* About.Me */}
+      <div className="font-thin text-justify flex flex-col gap-8">
+        <p>
+          I am a passionate Front Web Developer with a meticulous approach to writing clean, and efficient code. 
+          Currently, I am expanding my skillset to become a Fullstack Developer, integrating robust Backend capabilities into my repertoire.
+        </p>
+        <p>
+          Working at <a href="https://play.google.com/store/apps/details?id=hc.elite.profireborn&hl=ru" className="underline font-medium">Profi24.uz</a>, 
+          a dynamic local startup where I contribute to innovative projects that push the boundaries of web development. 
+          Alongside my professional endeavors, I am a dedicated student at Westminster International University in Tashkent (<a href="https://www.wiut.uz/" className="underline font-medium">WIUT</a>), supported by a prestigious government scholarship.
+        </p>
+
+        <div className="flex flex-col gap-1">
+          <h4 className="font-medium">#Vision:</h4>
+          <p>
+            My journey in technology doesn't stop at web development. 
+            I am eager to delve into the realms of Machine Learning (ML) and Artificial Intelligence (AI), 
+            aiming to create cutting-edge software applications and projects that make a significant impact on people's lives.
+          </p>
+        </div>
+        
+        <div className="flex flex-col gap-1">
+          <h4 className="font-medium">#Interests:</h4>
+          <p>Beyond coding, I have a diverse array of interests that keep me inspired:</p>
+
+          <ul className="pl-2">
+            <li className="flex items-center gap-1">
+              <TbMovie />
+              <span className="font-medium">Movies & Anime:</span> 
+              I enjoy immersing myself in captivating stories and unique animation styles.
+            </li>
+            <li className="flex items-center gap-1">
+              <TbMusicHeart />
+              <span className="font-medium">Music:</span>
+              A constant source of motivation and relaxation.
+            </li>
+            <li className="flex items-center gap-1">
+              <TbDeviceGamepad2 />
+              <span className="font-medium">Gaming:</span>
+              An avid player of Free Fire and Mobile Legends: Bang Bang (MLBB), always up for a challenge.
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          Thank you for visiting my portfolio. 
+          I am excited to connect with like-minded professionals and collaborate on future projects. 
+          Together, let's build the next generation of impactful digital solutions.
+        </p>
+      </div>
+
+    </main>
   );
 };
 

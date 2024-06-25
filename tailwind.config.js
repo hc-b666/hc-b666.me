@@ -9,9 +9,12 @@ export default {
         screens: {
           sm: "100%",
           md: "100%",
-          lg: "900px",
-          "2xl": "1080px",
+          lg: "720px",
+          "2xl": "900px",
         },
+      },
+      colors: {
+        grey: "#8d96a0",
       },
     },
   },

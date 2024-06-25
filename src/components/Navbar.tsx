@@ -2,20 +2,24 @@ import { Link, NavLink } from "react-router-dom";
 import { TbBrandGithub, TbBrandLinkedin, TbBrandLeetcode, TbSun, TbMoonStars } from "react-icons/tb";
 import { useTheme } from "../context/ThemeProvider";
 
-export const Navbar = () => {
+const Navbar = () => {
   const { theme, toggleTheme } = useTheme(); 
 
   return (
-    <nav className="container text-slate-700 w-full py-5 flex items-center justify-between bg-white dark:bg-black">
+    <nav className="container text-grey w-full py-5 flex items-center justify-between bg-white dark:bg-black">
     
       <NavLink to="/">
-        <h2 className="dark:hover:text-white duration-500 text-xl">&lt;bobur/&gt;</h2>
+        <h2 className="dark:hover:text-white duration-500 text-xl">&lt;hc-b666/&gt;</h2>
       </NavLink>
     
       <div className="flex items-center gap-5">
 
         <NavLink to="/projects" className="dark:hover:text-white hover:underline duration-500">
-          Projects
+          projects
+        </NavLink>
+        
+        <NavLink to="/resume" className="dark:hover:text-white hover:underline duration-500">
+          resume
         </NavLink>
         
         <Link to="https://github.com/hc-b666">
@@ -44,3 +48,4 @@ export const Navbar = () => {
   );
 };
 
+export default Navbar;
