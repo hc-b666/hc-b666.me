@@ -7,10 +7,11 @@ export default {
       container: {
         center: true,
         screens: {
-          sm: "100%",
-          md: "100%",
-          lg: "720px",
-          "2xl": "900px",
+          sm: "100%", // 640px
+          md: "100%", // 768px
+          lg: "720px", // 1024px
+          xl: "720px", // 1280px
+          "2xl": "900px", // 1280px
         },
       },
       colors: {

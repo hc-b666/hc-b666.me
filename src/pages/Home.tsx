@@ -9,16 +9,16 @@ import { FaUserGraduate } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <main className="container my-20 w-full text-black dark:text-white bg-white dark:bg-black">
+    <main className="container px-5 md:px-0 my-10 xl:my-20 w-full text-black dark:text-white bg-white dark:bg-black">
 
       {/* Heading */}
-      <div className="mb-10 flex flex-col">
-        <h1 className="text-2xl">Hello! I am Muhammadbobur</h1>
-        <span className="text-grey text-sm flex items-center gap-1"><TbCode />Aspiring Full-Stack Developer&nbsp; | &nbsp;<FaUserGraduate />WIUT Student&nbsp; | &nbsp;<TbDeviceGamepad2 />Gamer</span>
+      <div className="mb-5 xl:mb-10 flex flex-col">
+        <h1 className="text-xl xl:text-2xl">Hello! I am Muhammadbobur</h1>
+        <span className="text-grey text-xs xl:text-sm flex items-center flex-wrap gap-1"><TbCode />Aspiring Full-Stack Developer&nbsp; | &nbsp;<FaUserGraduate />WIUT Student&nbsp; | &nbsp;<TbDeviceGamepad2 />Gamer</span>
       </div>
 
       {/* About.Me */}
-      <div className="font-thin text-justify flex flex-col gap-8">
+      <div className="text-sm xl:text-base font-thin text-justify flex flex-col gap-4 xl:gap-8">
         <p>
           I am a passionate Front Web Developer with a meticulous approach to writing clean, and efficient code. 
           Currently, I am expanding my skillset to become a Fullstack Developer, integrating robust Backend capabilities into my repertoire.
@@ -29,6 +29,7 @@ const Home = () => {
           Alongside my professional endeavors, I am a dedicated student at Westminster International University in Tashkent (<a href="https://www.wiut.uz/" className="underline font-medium">WIUT</a>), supported by a prestigious government scholarship.
         </p>
 
+        {/* #Vision */}
         <div className="flex flex-col gap-1">
           <h4 className="font-medium">#Vision:</h4>
           <p>
@@ -38,26 +39,43 @@ const Home = () => {
           </p>
         </div>
         
+        {/* #Interests */}
         <div className="flex flex-col gap-1">
           <h4 className="font-medium">#Interests:</h4>
           <p>Beyond coding, I have a diverse array of interests that keep me inspired:</p>
 
-          <ul className="pl-2">
-            <li className="flex items-center gap-1">
-              <TbMovie />
-              <span className="font-medium">Movies & Anime:</span> 
-              I enjoy immersing myself in captivating stories and unique animation styles.
+          <ul className="pl-1 md:pl-2">
+
+            <li>
+              <div className="flex md:items-center gap-1">
+                <TbMovie className="text-xl md:text-base" />
+                <p>
+                  <span className="font-medium whitespace-nowrap">Movies & Anime:</span>
+                  &nbsp;I enjoy immersing myself in captivating stories and unique animation styles.
+                </p>
+              </div>
             </li>
-            <li className="flex items-center gap-1">
-              <TbMusicHeart />
-              <span className="font-medium">Music:</span>
-              A constant source of motivation and relaxation.
+
+            <li>
+              <div className="flex md:items-center gap-1">
+                <TbMusicHeart className="text-xl md:text-base" />
+                <p>
+                  <span className="font-medium whitespace-nowrap">Music:</span>
+                  &nbsp;A constant source of motivation and relaxation.
+                </p>
+              </div>
             </li>
-            <li className="flex items-center gap-1">
-              <TbDeviceGamepad2 />
-              <span className="font-medium">Gaming:</span>
-              An avid player of Free Fire and Mobile Legends: Bang Bang (MLBB), always up for a challenge.
+
+            <li>
+              <div className="flex md:items-center gap-1">
+                <TbDeviceGamepad2 className="text-xl md:text-base" />
+                <p>
+                  <span className="font-medium whitespace-nowrap">Gaming:</span>
+                  &nbsp;An avid player of Free Fire and Mobile Legends: Bang Bang (MLBB), always up for a challenge.
+                </p>
+              </div>
             </li>
+
           </ul>
         </div>
 
