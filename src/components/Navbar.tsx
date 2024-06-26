@@ -1,9 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
-import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbSun, TbMoonStars } from "react-icons/tb";
+import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbFileCv, TbSun, TbMoonStars } from "react-icons/tb";
 import { useTheme } from "../context/ThemeProvider";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme(); 
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/files/CV-Muhammadbobur-Abdukarimov.pdf";
+    link.download = "CV-Muhammadbobur-Abdukarimov.pdf";
+    link.click();
+  }
 
   return (
     <nav className="container text-grey w-full py-5 flex items-center justify-between bg-white dark:bg-black">
@@ -16,10 +23,6 @@ const Navbar = () => {
 
         <NavLink to="/projects" className="dark:hover:text-white hover:underline duration-500">
           Projects
-        </NavLink>
-        
-        <NavLink to="/resume" className="dark:hover:text-white hover:underline duration-500">
-          Resume
         </NavLink>
         
         <Link to="https://github.com/hc-b666">
@@ -37,6 +40,10 @@ const Navbar = () => {
         <Link to="https://www.instagram.com/hc_b666">
           <TbBrandInstagram className="dark:hover:text-white text-4xl w-6 h-6" />          
         </Link>
+        
+        <button onClick={handleDownload}>
+          <TbFileCv className="dark:hover:text-white text-4xl w-6 h-6" />          
+        </button>
 
         <button onClick={toggleTheme}>
           {theme === "dark" ? (
