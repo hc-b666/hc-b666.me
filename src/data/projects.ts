@@ -1,5 +1,6 @@
-import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandNodejs, TbBrandMongodb } from "react-icons/tb";
+import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandReact, TbBrandTailwind, TbBrandNextjs, TbBrandNodejs, TbBrandMongodb } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 // ToDo
 //  Correct the icons type
@@ -11,6 +12,7 @@ export interface ProjectInterface {
   image?: string;
   type: "Work" | "Side Hustle" | "University Course Works";
   link: string;
+  date: string;
 }
 
 const projects: ProjectInterface[] = [
@@ -24,7 +26,8 @@ const projects: ProjectInterface[] = [
     ],
     image: "/images/profi24-uz.jpg",
     type: "Work",
-    link: "",
+    link: "/profi24.uz-verstka",
+    date: "June, 2024",
   },
   {
     title: "Pomodoro App",
@@ -35,7 +38,8 @@ const projects: ProjectInterface[] = [
       { lang: "JavaScript", icon: TbBrandJavascript },
     ],
     type: "Side Hustle",
-    link: "",
+    link: "/pomodoro-app",
+    date: "January, 2024",
   },
   {
     title: "Task Management - Backend",
@@ -48,6 +52,7 @@ const projects: ProjectInterface[] = [
     ],
     type: "Side Hustle",
     link: "/kanban-back",
+    date: "May, 2024",
   },
   {
     title: "Web Technology - Course Work 2",
@@ -59,6 +64,7 @@ const projects: ProjectInterface[] = [
     ],
     type: "University Course Works",
     link: "/WT_CW2_00015589",
+    date: "March, 2024",
   }, 
   {
     title: "Web Technology - Course Work 1",
@@ -70,7 +76,56 @@ const projects: ProjectInterface[] = [
     ],
     type: "University Course Works",
     link: "/WT-CW1-00015589.github.io",
+    date: "Novermber, 2023",
   },
+  {
+    title: "My Portfolio",
+    description: "This is my portfolio. I used my creativity to design and develop this portfolio.",
+    langs: [
+      { lang: "TypeScript", icon: TbBrandTypescript },
+      { lang: "ReactJS", icon: TbBrandReact },
+      { lang: "Tailwind", icon: TbBrandTailwind },
+    ],
+    type: "Side Hustle",
+    link: "/hc-b666.me",
+    date: "June, 2024",
+  },
+  {
+    title: "Next Practice for the first time",
+    description: "I read the tutorial of official Next documentation and created this dashboard app. I learned how to use basics of NextJS, Zod, and PostgreSQL.",
+    langs: [
+      { lang: "TypeScript", icon: TbBrandTypescript },
+      { lang: "NextJS", icon: TbBrandNextjs },
+      { lang: "Tailwind", icon: TbBrandTailwind },
+      { lang: "PostgreSQL", icon: BiLogoPostgresql },
+    ],
+    type: "Side Hustle",
+    link: "/next-practice",
+    date: "April, 2024",
+  },
+  {
+    title: "Illuminous - Movie App UI Layout",
+    description: "A UI layout for Illuminous - Movie App. Design was from the Figma",
+    langs: [
+      { lang: "JavaScript", icon: TbBrandJavascript },
+      { lang: "ReactJS", icon: TbBrandReact },
+      { lang: "Tailwind", icon: TbBrandTailwind },
+    ],
+    type: "Side Hustle",
+    link: "/illumious",
+    date: "April, 2024",
+  },
+  {
+    title: "MyTeam Figma - UI Layout",
+    description: "A UI layout for MyTeam. Design was from the Figma",
+    langs: [
+      { lang: "HTML5", icon: TbBrandHtml5 },
+      { lang: "CSS", icon: TbBrandCss3 },
+    ],
+    type: "Side Hustle",
+    link: "/myteam",
+    date: "December, 2023",
+  }
 ];
 
 export default projects;

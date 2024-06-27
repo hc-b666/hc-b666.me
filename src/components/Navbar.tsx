@@ -1,20 +1,19 @@
+import { FC } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbFileCv, TbSun, TbMoonStars, TbMenuDeep } from "react-icons/tb";
 import { useTheme } from "../context/ThemeProvider";
+import handleDownload from "../lib/handleDownload";
 
 // ToDo
 // Optimize the Icon Links
 // Too many repetitive code
 
-const Navbar = () => {
-  const { theme, toggleTheme } = useTheme(); 
+interface NavbarInterface {
+  toggleSidebar: () => void;
+}
 
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/files/CV-Muhammadbobur-Abdukarimov.pdf";
-    link.download = "CV-Muhammadbobur-Abdukarimov.pdf";
-    link.click();
-  }
+const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <nav className="container px-5 md:px-0 py-5 w-full flex items-center justify-between text-grey bg-white dark:bg-black">
@@ -57,7 +56,7 @@ const Navbar = () => {
           )}
         </button>
 
-        <button className="md:hidden">
+        <button onClick={toggleSidebar} className="md:hidden">
           <TbMenuDeep className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />
         </button>
       
