@@ -2,7 +2,7 @@ import { FC, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbBrandTelegram, TbBrandX, TbBrandDiscord, TbFileCv } from "react-icons/tb";
 import { RiCloseLine } from "react-icons/ri";
-import handleDownload from "../lib/handleDownload";
+import handleDownload from "@lib/handleDownload";
 
 // ToDo
 // Optimize the Icon Links

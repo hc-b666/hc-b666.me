@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Project from "../components/Project";
-import projects, { ProjectInterface } from "../data/projects";
+import Project from "@components/Project";
+import projects, { ProjectInterface } from "@data/projects";
 
 const Projects = () => {
   return (

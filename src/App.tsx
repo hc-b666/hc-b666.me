@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
-
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-// import Resume from "./pages/Resume";
+import Navbar from "@components/Navbar";
+import Sidebar from "@components/Sidebar";
+import Footer from "@components/Footer";
+ 
+import Home from "@pages/Home";
+import Projects from "@pages/Projects";
+// import Resume from "@pages/Resume";
 
 // ToDo
 // Add Resume Page like CV file

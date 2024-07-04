@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbFileCv, TbSun, TbMoonStars, TbMenuDeep } from "react-icons/tb";
-import { useTheme } from "../context/ThemeProvider";
-import handleDownload from "../lib/handleDownload";
+import { useTheme } from "@context/ThemeProvider";
+import handleDownload from "@lib/handleDownload";
 
 // ToDo
 // Optimize the Icon Links

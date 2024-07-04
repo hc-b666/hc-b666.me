@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
-import { ProjectInterface } from "../data/projects";
+import { ProjectInterface } from "@data/projects";
 
 const Project: FC<{ project: ProjectInterface }> = ({ project }) => {
 
