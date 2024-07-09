@@ -4,13 +4,16 @@ import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbFi
 import { useTheme } from "@context/ThemeProvider";
 import handleDownload from "@lib/handleDownload";
 
-// ToDo
-// Optimize the Icon Links
-// Too many repetitive code
-
 interface NavbarInterface {
   toggleSidebar: () => void;
 }
+
+const navbarLinks = [
+  { name: "Github", link: "https://github.com/hc-b666", icon: <TbBrandGithub className="icon" /> },
+  { name: "Leetcode", link: "https://leetcode.com/u/hc-b666", icon: <TbBrandLeetcode className="icon"  /> },
+  { name: "Linkedin", link: "https://www.linkedin.com/in/muhammadbobur-abdukarimov-131362243", icon: <TbBrandLinkedin className="icon"  /> },
+  { name: "Instagram", link: "https://www.instagram.com/hc_b666", icon: <TbBrandInstagram className="icon"  /> }
+];
 
 const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
   const { theme, toggleTheme } = useTheme();
@@ -28,36 +31,26 @@ const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
           Projects
         </NavLink>
 
-        <Link to="https://github.com/hc-b666" className="hidden md:inline-block">
-          <TbBrandGithub className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />          
-        </Link>
-        
-        <Link to="https://leetcode.com/u/hc-b666" className="hidden md:inline-block">
-          <TbBrandLeetcode className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />          
-        </Link>
-
-        <Link to="https://www.linkedin.com/in/muhammadbobur-abdukarimov-131362243" className="hidden md:inline-block">
-          <TbBrandLinkedin className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />          
-        </Link>
-        
-        <Link to="https://www.instagram.com/hc_b666" className="hidden md:inline-block">
-          <TbBrandInstagram className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />          
-        </Link>
+        {navbarLinks.map((link, index) => (
+          <Link key={index} to={link.link} className="hidden md:inline-block">
+            {link.icon}
+          </Link>
+        ))}
         
         <button onClick={handleDownload} className="hidden md:inline-block">
-          <TbFileCv className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />          
+          <TbFileCv className="icon" />          
         </button>
 
         <button onClick={toggleTheme}>
           {theme === "dark" ? (
-            <TbSun className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />
+            <TbSun className="icon" />
           ) : (
-            <TbMoonStars className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />
+            <TbMoonStars className="icon" />
           )}
         </button>
 
         <button onClick={toggleSidebar} className="md:hidden">
-          <TbMenuDeep className="hover:text-black dark:hover:text-white text-4xl w-6 h-6" />
+          <TbMenuDeep className="icon" />
         </button>
       
       </div>
