@@ -1,6 +1,7 @@
-import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandReact, TbBrandTailwind, TbBrandNextjs, TbBrandNodejs, TbBrandMongodb } from "react-icons/tb";
+import { TbBrandHtml5, TbBrandCss3, TbBrandBootstrap, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandReact, TbBrandTailwind, TbBrandNextjs, TbBrandNodejs, TbBrandMongodb } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { SiSqlite } from "react-icons/si";
 
 // ToDo
 //  Correct the icons type
@@ -125,6 +126,44 @@ const projects: ProjectInterface[] = [
     type: "Side Hustle",
     link: "/myteam",
     date: "December, 2023",
+  }, 
+  {
+    title: "Admin Dashboard - UI Layout",
+    description: "A UI layout for Admin Dashboard. This was technical assignment from the company.",
+    langs: [
+      { lang: "HTML5", icon: TbBrandHtml5 },
+      { lang: "SCSS", icon: TbBrandSass },
+      { lang: "Bootstrap", icon: TbBrandBootstrap },
+    ],
+    type: "Work",
+    link: "/admin-verstka",
+    date: "July, 2024",
+  },
+  {
+    title: "To Do App",
+    description: "Full-Stack To Do App. I was inspired by ToDoist and I started building my own app.",
+    langs: [
+      { lang: "Tailwind", icon: TbBrandTailwind },
+      { lang: "TypeScript", icon: TbBrandTypescript },
+      { lang: "ReactJS", icon: TbBrandReact },
+      { lang: "NodeJS", icon: TbBrandNodejs },
+      { lang: "ExpressJS", icon: SiExpress },
+      { lang: "SQLite", icon: SiSqlite },
+    ],
+    type: "Side Hustle",
+    link: "/to-do-app",
+    date: "July, 2024",
+  },
+  {
+    title: "Custom React Hooks",
+    description: "React Custom Hooks in TypeScript, inspired by Kyle Cook",
+    langs: [
+      { lang: "TypeScript", icon: TbBrandTypescript },
+      { lang: "ReactJS", icon: TbBrandReact },
+    ],
+    type: "Side Hustle",
+    link: "/custom-react-hooks",
+    date: "July, 2024",
   }
 ];
 

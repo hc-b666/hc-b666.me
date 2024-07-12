@@ -14,7 +14,7 @@ const Project: FC<{ project: ProjectInterface }> = ({ project }) => {
 
       <p className="text-xs text-grey mb-3">{project.description}</p>
     
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="mt-auto flex flex-wrap items-center gap-2">
         {project.langs.map((Lang, index) => (
           <div key={index} className="flex items-center gap-1">
             <Lang.icon className="text-xl" />
