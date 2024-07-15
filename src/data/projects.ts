@@ -42,19 +42,19 @@ const projects: ProjectInterface[] = [
     link: "/pomodoro-app",
     date: "January, 2024",
   },
-  {
-    title: "Task Management - Backend",
-    description: "A simple backend using ExpressJS for my Kanban frontend task management app.",
-    langs: [
-      { lang: "TypeScript", icon: TbBrandTypescript },
-      { lang: "NodeJS", icon: TbBrandNodejs },
-      { lang: "ExpressJS", icon: SiExpress },
-      { lang: "MongoDB", icon: TbBrandMongodb },
-    ],
-    type: "Side Hustle",
-    link: "/kanban-back",
-    date: "May, 2024",
-  },
+  // {
+  //   title: "Task Management - Backend",
+  //   description: "A simple backend using ExpressJS for my Kanban frontend task management app.",
+  //   langs: [
+  //     { lang: "TypeScript", icon: TbBrandTypescript },
+  //     { lang: "NodeJS", icon: TbBrandNodejs },
+  //     { lang: "ExpressJS", icon: SiExpress },
+  //     { lang: "MongoDB", icon: TbBrandMongodb },
+  //   ],
+  //   type: "Side Hustle",
+  //   link: "/kanban-back",
+  //   date: "May, 2024",
+  // },
   {
     title: "Web Technology - Course Work 2",
     description: "This is coursework from Web Technology module for semester 2. I learned how to create simple CRUD backend using NodeJS and ExpressJS.",
@@ -101,7 +101,7 @@ const projects: ProjectInterface[] = [
       { lang: "PostgreSQL", icon: BiLogoPostgresql },
     ],
     type: "Side Hustle",
-    link: "/next-practice",
+    link: "/admin-panel-next",
     date: "April, 2024",
   },
   {
