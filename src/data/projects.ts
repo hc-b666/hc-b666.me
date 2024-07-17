@@ -1,8 +1,9 @@
-import { TbBrandHtml5, TbBrandCss3, TbBrandBootstrap, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandReact, TbBrandTailwind, TbBrandNextjs, TbBrandNodejs } from "react-icons/tb";
+import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandReact, TbBrandTailwind, TbBrandNextjs, TbBrandNodejs } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiSqlite } from "react-icons/si";
 // import { TbBrandMongodb } from "react-icons.tb";
+// import { TbBrandBootstrap } from "react-icons/tb";
 
 // ToDo
 //  Correct the icons type
@@ -128,18 +129,18 @@ const projects: ProjectInterface[] = [
     link: "/myteam",
     date: "December, 2023",
   }, 
-  {
-    title: "Admin Dashboard - UI Layout",
-    description: "A UI layout for Admin Dashboard. This was technical assignment from the company.",
-    langs: [
-      { lang: "HTML5", icon: TbBrandHtml5 },
-      { lang: "SCSS", icon: TbBrandSass },
-      { lang: "Bootstrap", icon: TbBrandBootstrap },
-    ],
-    type: "Work",
-    link: "/admin-verstka",
-    date: "July, 2024",
-  },
+  // {
+  //   title: "Admin Dashboard - UI Layout",
+  //   description: "A UI layout for Admin Dashboard. This was technical assignment from the company.",
+  //   langs: [
+  //     { lang: "HTML5", icon: TbBrandHtml5 },
+  //     { lang: "SCSS", icon: TbBrandSass },
+  //     { lang: "Bootstrap", icon: TbBrandBootstrap },
+  //   ],
+  //   type: "Work",
+  //   link: "/admin-verstka",
+  //   date: "July, 2024",
+  // },
   {
     title: "To Do App",
     description: "Full-Stack To Do App. I was inspired by ToDoist and I started building my own app.",
