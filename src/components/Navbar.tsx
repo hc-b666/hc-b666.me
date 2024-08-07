@@ -9,6 +9,12 @@ interface NavbarInterface {
 }
 
 const navbarLinks = [
+  { name: "Projects", link: "/projects" },
+  { name: "Extensions", link: "/extensions" },
+  // { name: "Resume", link: "/resume" },
+];
+
+const socialLinks = [
   { name: "Github", link: "https://github.com/hc-b666", icon: <TbBrandGithub className="icon" /> },
   { name: "Leetcode", link: "https://leetcode.com/u/hc-b666", icon: <TbBrandLeetcode className="icon"  /> },
   { name: "Linkedin", link: "https://www.linkedin.com/in/muhammadbobur-abdukarimov-131362243", icon: <TbBrandLinkedin className="icon"  /> },
@@ -26,12 +32,13 @@ export const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
       </NavLink>
     
       <div className="flex items-center gap-5">
-
-        <NavLink to="/projects" className="hover:text-black dark:hover:text-white hover:underline duration-500">
-          Projects
-        </NavLink>
-
         {navbarLinks.map((link, index) => (
+          <NavLink key={index} to={link.link} className="hidden md:inline-block hover:text-black dark:hover:text-white hover:underline duration-500">
+            {link.name}
+          </NavLink>
+        ))}
+
+        {socialLinks.map((link, index) => (
           <Link key={index} to={link.link} className="hidden md:inline-block">
             {link.icon}
           </Link>
@@ -51,8 +58,7 @@ export const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
 
         <button onClick={toggleSidebar} className="md:hidden">
           <TbMenuDeep className="icon" />
-        </button>
-      
+        </button>     
       </div>
     
     </nav>

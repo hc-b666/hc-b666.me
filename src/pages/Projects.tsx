@@ -4,7 +4,7 @@ import projects, { ProjectInterface } from "@/data/projects";
 
 export const Projects = () => {
   return (
-  <main className="container px-5 md:px-0 my-10 xl:my-20 w-full text-black dark:text-white bg-white dark:bg-black">
+    <main className="container px-5 md:px-0 my-10 xl:my-20 w-full text-black dark:text-white bg-white dark:bg-black">
       
       {/* Heading */}
       <div className="mb-5 xl:mb-10 flex flex-col">
