@@ -7,7 +7,7 @@ import { FaUserGraduate } from "react-icons/fa";
 // And when users clicks on it, it should open My Extensions Page
 // And in that page, there should be a list of my favorite extensions
 
-const Home = () => {
+export const Home = () => {
   return (
     <main className="container px-5 md:px-0 my-10 xl:my-20 w-full text-black dark:text-white bg-white dark:bg-black">
 
@@ -89,5 +89,3 @@ const Home = () => {
     </main>
   );
 };
-
-export default Home;

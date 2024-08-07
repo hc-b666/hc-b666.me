@@ -2,12 +2,20 @@ import { FC, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbBrandTelegram, TbBrandX, TbBrandDiscord, TbFileCv } from "react-icons/tb";
 import { RiCloseLine } from "react-icons/ri";
-import handleDownload from "@lib/handleDownload";
+import { GoProjectSymlink } from "react-icons/go";
+import { VscExtensions } from "react-icons/vsc";
+import handleDownload from "@/lib/handleDownload";
 
 interface SidebarInterface {
   sidebar: boolean;
   toggleSidebar: () => void;
 }
+
+const navbarLinks = [
+  { name: "Projects", link: "/projects", icon: <GoProjectSymlink className="icon" /> },
+  { name: "Extensions", link: "/extensions", icon: <VscExtensions className="icon" /> },
+  // { name: "Resume", link: "/resume" },
+];
 
 const sidebarLinks = [
   { name: "Github", link: "https://github.com/hc-b666", icon: <TbBrandGithub className="icon" /> },
@@ -19,7 +27,7 @@ const sidebarLinks = [
   { name: "Discord", link: "https://discordapp.com/users/1239424605534421022", icon: <TbBrandDiscord className="icon" />}
 ];
 
-const Sidebar: FC<SidebarInterface> = ({ sidebar, toggleSidebar }) => {
+export const Sidebar: FC<SidebarInterface> = ({ sidebar, toggleSidebar }) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -53,24 +61,37 @@ const Sidebar: FC<SidebarInterface> = ({ sidebar, toggleSidebar }) => {
             </button>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2">
+              <h6 className="text-xs text-grey">Pages</h6>
+              {navbarLinks.map((link, index) => (
+                <NavLink key={index} to={link.link} className="flex items-center gap-2">
+                  {link.icon}
+                  {link.name}
+                </NavLink>
+              ))}
+            </div>
             
-            {sidebarLinks.map((link, index) => (
-              <Link key={index} to={link.link} className="flex items-center gap-2">
-                {link.icon}
-                {link.name}
-              </Link>
-            ))}
+            <div className="flex flex-col gap-2">
+              <h6 className="text-xs text-grey">Social Links</h6>
+              {sidebarLinks.map((link, index) => (
+                <Link key={index} to={link.link} className="flex items-center gap-2">
+                  {link.icon}
+                  {link.name}
+                </Link>
+              ))}
+            </div>
             
-            <button onClick={handleDownload} className="flex items-center gap-2">
-              <TbFileCv className="icon" />          
-              Download my CV
-            </button>
+            <div className="flex flex-col gap-2">
+              <h6 className="text-xs text-grey">More</h6>
+              <button onClick={handleDownload} className="flex items-center gap-2">
+                <TbFileCv className="icon" />          
+                Download my CV
+              </button>
+            </div>
           </div>
         </>
       )}
     </aside>
   );
 };
-
-export default Sidebar;

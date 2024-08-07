@@ -8,11 +8,15 @@
 }
 
 .icon {
-  @apply hover:text-black dark:hover:text-white text-4xl w-6 h-6; 
+  @apply hover:text-black dark:hover:text-white text-4xl w-6 h-6;
 }
 
 .project-wrap {
   @apply p-5 rounded-lg flex flex-col border-2 hover:shadow-lg border-gray-100 hover:border-gray-300 hover:shadow-gray-300 dark:border-gray-900 dark:hover:border-gray-700 dark:hover:shadow-gray-700 duration-500 cursor-pointer;
+}
+
+.extension-wrap {
+  @apply p-5 rounded-lg flex items-center justify-between gap-5 border-2 hover:shadow-lg border-gray-100 hover:border-gray-300 hover:shadow-gray-300 dark:border-gray-900 dark:hover:border-gray-700 dark:hover:shadow-gray-700 duration-500 cursor-pointer;
 }
 
 ::-webkit-scrollbar {

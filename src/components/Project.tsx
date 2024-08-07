@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
-import { ProjectInterface } from "@data/projects";
+import { ProjectInterface } from "@/data/projects";
 
-const Project: FC<{ project: ProjectInterface }> = ({ project }) => {
+export const Project: FC<{ project: ProjectInterface }> = ({ project }) => {
 
   return (
     <Link to={`https://github.com/hc-b666${project.link}`} className="project-wrap">
@@ -26,5 +26,3 @@ const Project: FC<{ project: ProjectInterface }> = ({ project }) => {
     </Link>
   );
 };
-
-export default Project;

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import Project from "@components/Project";
-import projects, { ProjectInterface } from "@data/projects";
+import { Project } from "@/components";
+import projects, { ProjectInterface } from "@/data/projects";
 
-const Projects = () => {
+export const Projects = () => {
   return (
-  <main className="container px-5 md:px-0 my-10 xl:my-20 w-full text-black dark:text-white bg-white dark:bg-black">
+    <main className="container px-5 md:px-0 my-10 xl:my-20 w-full text-black dark:text-white bg-white dark:bg-black">
       
       {/* Heading */}
       <div className="mb-5 xl:mb-10 flex flex-col">
@@ -23,5 +23,3 @@ const Projects = () => {
     </main>
   );
 };
-
-export default Projects;
