@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbFileCv, TbSun, TbMoonStars, TbMenuDeep } from "react-icons/tb";
-import { useTheme } from "@context/ThemeProvider";
-import handleDownload from "@lib/handleDownload";
+import { useTheme } from "@/context/ThemeProvider";
+import handleDownload from "@/lib/handleDownload";
 
 interface NavbarInterface {
   toggleSidebar: () => void;
@@ -15,7 +15,7 @@ const navbarLinks = [
   { name: "Instagram", link: "https://www.instagram.com/hc_b666", icon: <TbBrandInstagram className="icon"  /> }
 ];
 
-const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
+export const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -58,5 +58,3 @@ const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
     </nav>
   );
 };
-
-export default Navbar;

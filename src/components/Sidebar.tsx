@@ -2,7 +2,7 @@ import { FC, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { TbBrandGithub, TbBrandLeetcode, TbBrandLinkedin, TbBrandInstagram, TbBrandTelegram, TbBrandX, TbBrandDiscord, TbFileCv } from "react-icons/tb";
 import { RiCloseLine } from "react-icons/ri";
-import handleDownload from "@lib/handleDownload";
+import handleDownload from "@/lib/handleDownload";
 
 interface SidebarInterface {
   sidebar: boolean;
@@ -19,7 +19,7 @@ const sidebarLinks = [
   { name: "Discord", link: "https://discordapp.com/users/1239424605534421022", icon: <TbBrandDiscord className="icon" />}
 ];
 
-const Sidebar: FC<SidebarInterface> = ({ sidebar, toggleSidebar }) => {
+export const Sidebar: FC<SidebarInterface> = ({ sidebar, toggleSidebar }) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -72,5 +72,3 @@ const Sidebar: FC<SidebarInterface> = ({ sidebar, toggleSidebar }) => {
     </aside>
   );
 };
-
-export default Sidebar;
