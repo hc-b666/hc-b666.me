@@ -156,17 +156,17 @@ const projects: ProjectInterface[] = [
     link: "/to-do-app",
     date: "July, 2024",
   },
-  {
-    title: "Custom React Hooks",
-    description: "React Custom Hooks in TypeScript, inspired by Kyle Cook",
-    langs: [
-      { lang: "TypeScript", icon: TbBrandTypescript },
-      { lang: "ReactJS", icon: TbBrandReact },
-    ],
-    type: "Side Hustle",
-    link: "/custom-react-hooks",
-    date: "July, 2024",
-  }
+  // {
+  //   title: "Custom React Hooks",
+  //   description: "React Custom Hooks in TypeScript, inspired by Kyle Cook",
+  //   langs: [
+  //     { lang: "TypeScript", icon: TbBrandTypescript },
+  //     { lang: "ReactJS", icon: TbBrandReact },
+  //   ],
+  //   type: "Side Hustle",
+  //   link: "/custom-react-hooks",
+  //   date: "July, 2024",
+  // }
 ];
 
 export default projects;
