@@ -1,4 +1,4 @@
-import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandReact, TbBrandTailwind, TbBrandNextjs, TbBrandNodejs } from "react-icons/tb";
+import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandReact, TbBrandTailwind, TbBrandNextjs, TbBrandNodejs, TbBrandReactNative } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 // import { SiSqlite } from "react-icons/si";
@@ -166,7 +166,18 @@ const projects: ProjectInterface[] = [
   //   type: "Side Hustle",
   //   link: "/custom-react-hooks",
   //   date: "July, 2024",
-  // }
+  // },
+  {
+    title: "React Native Projects",
+    description: "Learn React Native by creating projects",
+    langs: [
+      { lang: "TypeScript", icon: TbBrandTypescript },
+      { lang: "React Native", icon: TbBrandReactNative },
+    ],
+    type: "Side Hustle",
+    link: "/react-native-projects",
+    date: "September, 2024",
+  },
 ];
 
 export default projects;
