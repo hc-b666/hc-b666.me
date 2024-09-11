@@ -15,7 +15,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col 2xl:justify-between bg-white dark:bg-black relative">
+    <div className="min-h-screen flex flex-col 2xl:justify-start bg-white dark:bg-black relative">
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar sidebar={sidebar} toggleSidebar={toggleSidebar} />
       <Routes>

@@ -1,6 +1,7 @@
 import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandTypescript, TbBrandReact, TbBrandTailwind, TbBrandNextjs, TbBrandNodejs, TbBrandReactNative } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { IconType } from "react-icons";
 // import { SiSqlite } from "react-icons/si";
 // import { TbBrandMongodb } from "react-icons.tb";
 // import { TbBrandBootstrap } from "react-icons/tb";
@@ -11,7 +12,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 export interface ProjectInterface {
   title: string;
   description: string;
-  langs: { lang: string; icon: any }[];
+  langs: { lang: string; icon: IconType }[];
   image?: string;
   type: "Work" | "Side Hustle" | "University Course Works";
   link: string;
