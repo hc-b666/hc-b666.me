@@ -21,7 +21,7 @@ export const Projects = () => {
         </div>
         <p className="text-grey text-xs xl:text-sm flex items-center flex-wrap gap-1">
           <span
-            className="cursor-pointer hover:text-black"
+            className="cursor-pointer hover:text-black dark:hover:text-white"
             onClick={() =>
               filter === "Work" ? setFilter("") : setFilter("Work")
             }
@@ -30,7 +30,7 @@ export const Projects = () => {
           </span>
           &nbsp; | &nbsp;
           <span
-            className="cursor-pointer hover:text-black"
+            className="cursor-pointer hover:text-black dark:hover:text-white"
             onClick={() =>
               filter === "Side Hustle"
                 ? setFilter("")
@@ -41,7 +41,7 @@ export const Projects = () => {
           </span>
           &nbsp; | &nbsp;
           <span
-            className="cursor-pointer hover:text-black"
+            className="cursor-pointer hover:text-black dark:hover:text-white"
             onClick={() =>
               filter === "University Course Works"
                 ? setFilter("")
