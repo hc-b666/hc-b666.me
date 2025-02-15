@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Project } from "@/components";
-import projects, { ProjectInterface } from "@/data/projects";
+// import { Project } from "@/components";
+// import projects, { ProjectInterface } from "@/data/projects";
 import { useState } from "react";
+import ProjectsList from "@/features/projects/components/ProjectsList";
 
 type FilterType = "" | "Work" | "Side Hustle" | "University Course Works";
 
@@ -53,17 +54,7 @@ export const Projects = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        {filter === ""
-          ? projects.map((project: ProjectInterface, index: number) => (
-              <Project project={project} key={index} />
-            ))
-          : projects
-              .filter((project) => project.type === filter)
-              .map((project, index) => (
-                <Project project={project} key={index} />
-              ))}
-      </div>
+      <ProjectsList />
     </main>
   );
 };

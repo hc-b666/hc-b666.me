@@ -4,9 +4,6 @@ import { Navbar, Sidebar, Footer } from "@/components";
 
 import { Home, Projects, Extensions } from "@/pages";
 
-// ToDo
-// Add Resume Page like CV file
-
 const App = () => {
   const [sidebar, setSidebar] = useState(false);
 
