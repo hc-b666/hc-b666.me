@@ -7,12 +7,13 @@ export default function useFetchProjects() {
   const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
-    function fetchProjects() {
+    async function fetchProjects() {
       setLoading(true);
       try {
-        const res = fetch(PROJECTS_URL).then((res) => res.json());
-        console.log(res);
-        setProjects([]);
+        const res: Project[] = await fetch(PROJECTS_URL).then((res) =>
+          res.json()
+        );
+        setProjects(res);
       } catch (err) {
         console.error(err);
       } finally {

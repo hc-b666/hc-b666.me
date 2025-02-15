@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Route, Routes } from "react-router";
-import { Navbar, Sidebar, Footer } from "@/components";
+import { Navbar } from "@/common/components/Navbar";
+import { Sidebar } from "@/common/components/Sidebar";
+import { Footer } from "@/common/components/Footer";
+import Router from "./router";
 
-import { Home, Projects, Extensions } from "@/pages";
-
-const App = () => {
+export default function App() {
   const [sidebar, setSidebar] = useState(false);
 
   const toggleSidebar = () => {
@@ -15,15 +15,8 @@ const App = () => {
     <div className="min-h-screen flex flex-col 2xl:justify-start bg-white dark:bg-black relative">
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar sidebar={sidebar} toggleSidebar={toggleSidebar} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/extensions" element={<Extensions />} />
-        {/* <Route path="/resume" element={<Resume />} /> */}
-      </Routes>
+      <Router />
       <Footer />
     </div>
   );
-};
-
-export default App;
+}

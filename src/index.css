@@ -1,10 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-grey: #8d96a0;
+}
+
+@utility container {
+  margin-inline: auto;
+  @media (width >= --theme(--breakpoint-sm)) {
+    max-width: none;
+  }
+  @media (width >= 100%) {
+    max-width: 100%;
+  }
+  @media (width >= 100%) {
+    max-width: 100%;
+  }
+  @media (width >= 720px) {
+    max-width: 720px;
+  }
+  @media (width >= 720px) {
+    max-width: 720px;
+  }
+  @media (width >= 900px) {
+    max-width: 900px;
+  }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 * {
   font-family: "Ubuntu", sans-serif;
   @apply duration-300;
+}
+
+.skeleton {
+  @apply animate-pulse rounded-md bg-zinc-900/10 dark:bg-zinc-50/10;
 }
 
 .icon {

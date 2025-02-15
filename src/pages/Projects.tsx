@@ -1,13 +1,11 @@
+// import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { Project } from "@/components";
-// import projects, { ProjectInterface } from "@/data/projects";
-import { useState } from "react";
 import ProjectsList from "@/features/projects/components/ProjectsList";
 
-type FilterType = "" | "Work" | "Side Hustle" | "University Course Works";
+// type FilterType = "" | "Work" | "Side Hustle" | "University Course Works";
 
-export const Projects = () => {
-  const [filter, setFilter] = useState<FilterType>("");
+export default function ProjectsPage() {
+  // const [filter, setFilter] = useState<FilterType>("");
 
   return (
     <main className="container px-5 md:px-0 my-10 xl:my-20 w-full text-black dark:text-white bg-white dark:bg-black">
@@ -20,7 +18,7 @@ export const Projects = () => {
             </span>
           </Link>
         </div>
-        <p className="text-grey text-xs xl:text-sm flex items-center flex-wrap gap-1">
+        {/* <p className="text-grey text-xs xl:text-sm flex items-center flex-wrap gap-1">
           <span
             className="cursor-pointer hover:text-black dark:hover:text-white"
             onClick={() =>
@@ -51,10 +49,10 @@ export const Projects = () => {
           >
             University Course Works
           </span>
-        </p>
+        </p> */}
       </div>
 
       <ProjectsList />
     </main>
   );
-};
+}
