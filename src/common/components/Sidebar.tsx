@@ -11,7 +11,7 @@ import {
   TbFileCv,
 } from "react-icons/tb";
 import { RiCloseLine } from "react-icons/ri";
-import { GoProjectSymlink } from "react-icons/go";
+// import { GoProjectSymlink } from "react-icons/go";
 import { handleDownload } from "@/common/utils";
 
 interface SidebarInterface {
@@ -19,13 +19,13 @@ interface SidebarInterface {
   toggleSidebar: () => void;
 }
 
-const navbarLinks = [
-  // {
-  //   name: "Projects",
-  //   link: "/projects",
-  //   icon: <GoProjectSymlink className="icon" />,
-  // },
-];
+// const navbarLinks = [
+//   {
+//     name: "Projects",
+//     link: "/projects",
+//     icon: <GoProjectSymlink className="icon" />,
+//   },
+// ];
 
 const sidebarLinks = [
   {
@@ -110,19 +110,19 @@ export const Sidebar: FC<SidebarInterface> = ({ sidebar, toggleSidebar }) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <div className="flex flex-col gap-2">
-              <h6 className="text-xs text-grey">Pages</h6>
-              {navbarLinks.map((link, index) => (
-                <NavLink
-                  key={index}
-                  to={link.link}
-                  className="flex items-center gap-2"
-                >
-                  {link.icon}
-                  {link.name}
-                </NavLink>
-              ))}
-            </div>
+            {/* <div className="flex flex-col gap-2"> */}
+            {/*   <h6 className="text-xs text-grey">Pages</h6> */}
+            {/*   {navbarLinks.map((link, index) => ( */}
+            {/*     <NavLink */}
+            {/*       key={index} */}
+            {/*       to={link.link} */}
+            {/*       className="flex items-center gap-2" */}
+            {/*     > */}
+            {/*       {link.icon} */}
+            {/*       {link.name} */}
+            {/*     </NavLink> */}
+            {/*   ))} */}
+            {/* </div> */}
 
             <div className="flex flex-col gap-2">
               <h6 className="text-xs text-grey">Social Links</h6>

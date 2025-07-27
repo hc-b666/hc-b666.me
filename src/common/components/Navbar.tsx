@@ -17,9 +17,9 @@ interface NavbarInterface {
   toggleSidebar: () => void;
 }
 
-const navbarLinks = [
-  // { name: "Projects", link: "/projects" },
-];
+// const navbarLinks = [
+//   { name: "Projects", link: "/projects" },
+// ];
 
 const socialLinks = [
   {
@@ -56,15 +56,15 @@ export const Navbar: FC<NavbarInterface> = ({ toggleSidebar }) => {
       </NavLink>
 
       <div className="flex items-center gap-5">
-        {navbarLinks.map((link, index) => (
-          <NavLink
-            key={index}
-            to={link.link}
-            className="hidden md:inline-block hover:text-black dark:hover:text-white hover:underline duration-500"
-          >
-            {link.name}
-          </NavLink>
-        ))}
+        {/* {navbarLinks.map((link, index) => ( */}
+        {/*   <NavLink */}
+        {/*     key={index} */}
+        {/*     to={link.link} */}
+        {/*     className="hidden md:inline-block hover:text-black dark:hover:text-white hover:underline duration-500" */}
+        {/*   > */}
+        {/*     {link.name} */}
+        {/*   </NavLink> */}
+        {/* ))} */}
 
         {socialLinks.map((link, index) => (
           <Link key={index} to={link.link} className="hidden md:inline-block">
