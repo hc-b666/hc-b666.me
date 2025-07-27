@@ -17,7 +17,9 @@ interface NavbarInterface {
   toggleSidebar: () => void;
 }
 
-const navbarLinks = [{ name: "Projects", link: "/projects" }];
+const navbarLinks = [
+  // { name: "Projects", link: "/projects" },
+];
 
 const socialLinks = [
   {

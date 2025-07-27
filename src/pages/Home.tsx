@@ -5,6 +5,7 @@ import {
   TbDeviceGamepad2,
 } from "react-icons/tb";
 import { FaUserGraduate } from "react-icons/fa";
+import { SiArchlinux } from "react-icons/si";
 
 // ToDo
 // import { TbBrandVscode } from "react-icons/tb";
@@ -20,57 +21,40 @@ export default function HomePage() {
         <h1 className="text-xl xl:text-2xl">Hello! I am Muhammadbobur</h1>
         <span className="text-grey text-xs xl:text-sm flex items-center flex-wrap gap-1">
           <TbCode />
-          Aspiring Full-Stack Developer&nbsp; | &nbsp;
+          Aspiring Software Engineer&nbsp; | &nbsp;
           <FaUserGraduate />
           WIUT Student&nbsp; | &nbsp;
+          <SiArchlinux />
+          I use Arch btw&nbsp; | &nbsp;
           <TbDeviceGamepad2 />
           Gamer
         </span>
       </div>
 
       {/* About.Me */}
-      <div className="text-sm xl:text-base font-thin text-justify flex flex-col gap-4 xl:gap-8">
+      <div className="text-sm text-justify flex flex-col gap-4 xl:gap-8">
         <p>
-          I am a passionate Front Web Developer with a meticulous approach to
-          writing clean, and efficient code. Currently, I am expanding my
-          skillset to become a Fullstack Developer, integrating robust Backend
-          capabilities into my repertoire.
-        </p>
-        <p>
-          Working at{" "}
-          <a
-            href="https://play.google.com/store/apps/details?id=hc.elite.profireborn&hl=ru"
-            className="underline font-medium"
-          >
-            Profi24.uz
-          </a>
-          , a dynamic local startup where I contribute to innovative projects
-          that push the boundaries of web development. Alongside my professional
-          endeavors, I am a dedicated student at Westminster International
-          University in Tashkent (
-          <a href="https://www.wiut.uz/" className="underline font-medium">
-            WIUT
-          </a>
-          ), supported by a prestigious government scholarship.
+          I'm a passionate software developer with a focus on building clean, functional, and efficient digital products.
+          While I started my journey in frontend development—working with technologies like React, TypeScript, and Tailwind—I don’t limit myself to just UI.
+          I’m constantly pushing to deepen my understanding of backend systems, low-level programming, and computer science fundamentals.
         </p>
 
-        {/* #Vision */}
-        <div className="flex flex-col gap-1">
-          <h4 className="font-medium">#Vision:</h4>
-          <p>
-            My journey in technology doesn't stop at web development. I am eager
-            to delve into the realms of Machine Learning (ML) and Artificial
-            Intelligence (AI), aiming to create cutting-edge software
-            applications and projects that make a significant impact on people's
-            lives.
-          </p>
-        </div>
+        <p>
+          I love solving problems—whether it's optimizing an API, crafting reusable components, or diving into algorithms and data structures.
+          Outside of building projects, I enjoy exploring operating systems, networks, and how things work under the hood.
+          I believe great engineers don’t just build features—they understand systems end to end.
+        </p>
+
+        <p>
+          Currently, I'm learning Go and working on side projects that challenge me to grow as a full-stack developer.
+          My goal is to become a well-rounded software engineer who can design scalable architectures, write performant code, and collaborate effectively on real-world products.
+        </p>
 
         {/* #Interests */}
         <div className="flex flex-col gap-1">
           <h4 className="font-medium">#Interests:</h4>
           <p>
-            Beyond coding, I have a diverse array of interests that keep me
+            Beyond coding, I have a diverse vector of interests that keep me
             inspired:
           </p>
 

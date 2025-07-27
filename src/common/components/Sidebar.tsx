@@ -20,11 +20,11 @@ interface SidebarInterface {
 }
 
 const navbarLinks = [
-  {
-    name: "Projects",
-    link: "/projects",
-    icon: <GoProjectSymlink className="icon" />,
-  },
+  // {
+  //   name: "Projects",
+  //   link: "/projects",
+  //   icon: <GoProjectSymlink className="icon" />,
+  // },
 ];
 
 const sidebarLinks = [

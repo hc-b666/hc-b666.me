@@ -1,9 +1,11 @@
+@import url("./fonts.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "JetBrainsMonoNerdFont", sans-serif;
   @apply duration-300;
 }
 
